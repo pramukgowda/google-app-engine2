@@ -1,1 +1,8 @@
+from flask import Flask, render_template
+app = Flask(_name_)
+@app.route('/')
+def home():
+  return render_template('index.html', title="Home Page")
 
+if _name_=='_main_':
+  app.run(host='127.0.0.1',port=8080, debug=True)
